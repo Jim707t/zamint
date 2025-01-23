@@ -22,13 +22,13 @@ const TechnoAfunism: NextPage = () => {
       <Head>
         <title>Techno-Afunism - Zamint</title>
         <meta name="description" content="Introduction to Techno-Afunism - A declaration of a new era where African techno-afunists rise" />
-        <meta property="og:title" content="Techno-Afunism Manifesto" />
+        <meta property="og:title" content="Introduction to Techno-Afunism" />
         <meta property="og:description" content="A declaration of a new era where African techno-afunists rise. Join the movement of intelligent creators building Africa&apos;s technological future." />
         <meta property="og:image" content="https://zamintrace.com/MyImage/techno.jpg" />
         <meta property="og:url" content="https://zamintrace.com/techno-afunism" />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Techno-Afunism Manifesto" />
+        <meta name="twitter:title" content="Introduction to Techno-Afunism" />
         <meta name="twitter:description" content="A declaration of a new era where African techno-afunists rise. Join the movement of intelligent creators building Africa&apos;s technological future." />
         <meta name="twitter:image" content="https://zamintrace.com/MyImage/techno.jpg" />
       </Head>
