@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Play, Pause } from 'lucide-react';
+import Image from 'next/image';
 
 type ZamintItem = {
   image: string;
@@ -24,7 +25,7 @@ const Gallery = () => {
       try {
         const response = await import('../data/zamint-ideology.json');
         setData(response.default);
-      } catch (err) {
+      } catch {
         setError('failed to load gallery data');
         setIsAutoScroll(false);
       }
@@ -42,14 +43,9 @@ const Gallery = () => {
     return () => clearInterval(intervalId);
   }, [isAutoScroll, data]);
 
-  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
-    const img = e.target as HTMLImageElement;
-    img.src = '/placeholder.jpg';
-  };
-
   if (error) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-rose-900 to-red-950 text-white flex items-center justify-center">
+      <div className="min-h-screen bg-black text-white flex items-center justify-center">
         <p className="text-red-500">Error: {error}</p>
       </div>
     );
@@ -70,11 +66,11 @@ const Gallery = () => {
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-8">
         <div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="relative w-full aspect-square overflow-hidden rounded-2xl shadow-2xl border-4 border-white-900">
-            <img 
+            <Image 
               src={`/MyImage/${data.zamintData[currentSlide].image}`}
               alt={`${data.zamintData[currentSlide].concept} concept visualization`}
-              onError={handleImageError}
-              className="absolute inset-0 w-full h-full object-cover transition-all duration-700 transform scale-105 hover:scale-110"
+              fill
+              className="object-cover transition-all duration-700 transform scale-105 hover:scale-110"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-4">
               <div className="text-sm uppercase tracking-wide text-green-400" aria-live="polite">

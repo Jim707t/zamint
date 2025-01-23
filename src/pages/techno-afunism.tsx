@@ -1,35 +1,38 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const TechnoAfunism: NextPage = () => {
   return (
-    <div className="min-h-screen bg-black">
-      <div className="absolute inset-0 bg-gradient-to-b from-red-900/20 to-transparent" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-red-800/10 via-transparent to-transparent" />
+    <div className="relative min-h-screen bg-black">
+      <div className="fixed inset-0 bg-black">
+        <Image 
+          src="/MyImage/techno.jpg"
+          alt="Techno-Afunism Background"
+          fill
+          quality={100}
+          priority
+          className="object-cover mix-blend-overlay opacity-60"
+        />
+      </div>
+
+      <div className="fixed inset-0 bg-gradient-to-b from-red-800 via-red-950 to-black opacity-80" />
       
       <Head>
         <title>Techno-Afunism - Zamint</title>
         <meta name="description" content="Introduction to Techno-Afunism - A declaration of a new era where African techno-afunists rise" />
-        <meta property="og:title" content="Techno-Afunism" />
-        <meta property="og:description" content="A declaration of a new era where African techno-afunists rise." />
+        <meta property="og:title" content="Techno-Afunism Manifesto" />
+        <meta property="og:description" content="A declaration of a new era where African techno-afunists rise. Join the movement of intelligent creators building Africa&apos;s technological future." />
         <meta property="og:image" content="https://zamintrace.com/MyImage/techno.jpg" />
         <meta property="og:url" content="https://zamintrace.com/techno-afunism" />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Techno-Afunism Manifesto" />
-        <meta name="twitter:description" content="A declaration of a new era where African techno-afunists rise." />
+        <meta name="twitter:description" content="A declaration of a new era where African techno-afunists rise. Join the movement of intelligent creators building Africa&apos;s technological future." />
         <meta name="twitter:image" content="https://zamintrace.com/MyImage/techno.jpg" />
       </Head>
 
-      <div className="fixed inset-0 z-0">
-        <img 
-          src="/MyImage/techno.jpg"
-          alt="Techno-Afunism Background"
-          className="w-full h-full object-cover opacity-20"
-        />
-      </div>
-      
       <main className="container mx-auto px-4 py-16 relative z-10">
         <Link href="/" className="text-red-400 hover:text-red-300 mb-8 inline-block">
           ← Back Home
@@ -48,10 +51,10 @@ const TechnoAfunism: NextPage = () => {
               This is a declaration of a new era, where we, the African techno-afunist, rise.
             </p>
             <p>
-              Intelligent African creators are those that will create the grand future. It's obvious not all Africans are willing to contribute and that's fine. Those who will not contribute will simply read and go on with their lives; there's nothing more we can expect from them. It's nature, no matter the race it is always a small percent that are really creators and builders of what everyone will all enjoy even the naysayers.   
+              Intelligent African creators are those that will create the grand future. It&apos;s obvious not all Africans are willing to contribute and that&apos;s fine. Those who will not contribute will simply read and go on with their lives; there&apos;s nothing more we can expect from them. It&apos;s nature, no matter the race it is always a small percent that are really creators and builders of what everyone will all enjoy even the naysayers.   
             </p>
             <p>
-              The will of techno-afunist is to define us by what we will do. We will use our strength, our history, and our future to become more than we have ever been. We are here to procreate and evolve and we believe technology and science is key for Africa's great future.
+              The will of techno-afunist is to define us by what we will do. We will use our strength, our history, and our future to become more than we have ever been. We are here to procreate and evolve and we believe technology and science is key for Africa&apos;s great future.
             </p>
             <p>
               This is our call to arms, our declaration of intent. We will thrive. We will command our narrative. As a techno-afunist be ready to assert yourself, as an African be ready to take what is ours by right.
@@ -64,13 +67,13 @@ const TechnoAfunism: NextPage = () => {
           <section className="space-y-6">
             <h2 className="text-3xl font-bold text-red-400">The Historical Burden</h2>
             <p>
-              Our history isn't a trophy to be waved around for others to see. We don't have to prove our worth to anyone other than ourselves.
+              Our history isn&apos;t a trophy to be waved around for others to see. We don&apos;t have to prove our worth to anyone other than ourselves.
             </p>
             <p>
-              The great days of Nok, Aksum, and the Bantu are a testament to what's in our blood. Innovation, resilience, creativity. Our history, our starting line.
+              The great days of Nok, Aksum, and the Bantu are a testament to what&apos;s in our blood. Innovation, resilience, creativity. Our history, our starting line.
             </p>
             <p>
-              We should not argue our place in the history books. We're to write new ones.
+              We should not argue our place in the history books. We&apos;re to write new ones.
             </p>
             <p>
               We will be greater than ever. Stop looking back to justify your existence. Start looking forward to claim your destiny.
@@ -83,28 +86,28 @@ const TechnoAfunism: NextPage = () => {
           <section className="space-y-6">
             <h2 className="text-3xl font-bold text-red-400">The Zamint Path to Technological Dominion</h2>
             <p>
-              Fuck the pessimists, the naysayers, the destroyers who will read this, sneer, and then crawl back to their pathetic, resigned lives. "Introduction to Techno-Afunism" is a wake-up call to the intelligent creators, those ready to accelerate in build the future.
+              Fuck the pessimists, the naysayers, the destroyers who will read this, sneer, and then crawl back to their pathetic, resigned lives. &quot;Introduction to Techno-Afunism&quot; is a wake-up call to the intelligent creators, those ready to accelerate in build the future.
             </p>
             <p>
-              The universe doesn't give a shit about your doubts; it favors growth, complexity, and power. We'll harness that, creating tech that sets it pace.
+              The universe doesn&apos;t give a shit about your doubts; it favors growth, complexity, and power. We&apos;ll harness that, creating tech that sets it pace.
             </p>
             <div className="bg-red-950/30 border border-red-500/20 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-4 text-red-400">Environment as Catalyst</h3>
               <p>
-                Silicon Valley? That's child's play compared to what we'll do with our landscapes. From the deserts to the jungles, we'll make our environment our tech's muse. The pessimists will see only barriers as per usual, but we'll see the raw material for our dominance.
+                Silicon Valley? That&apos;s child&apos;s play compared to what we&apos;ll do with our landscapes. From the deserts to the jungles, we&apos;ll make our environment our tech&apos;s muse. The pessimists will see only barriers as per usual, but we&apos;ll see the raw material for our dominance.
               </p>
             </div>
             <p>
-              It's a war cry. We're not asking to be part of the tech game; we're declaring we'll own it. Technology will be our language, our weapon, our culture. Tech that speaks our truth, solves our issues, and elevates our name.
+              It&apos;s a war cry. We&apos;re not asking to be part of the tech game; we&apos;re declaring we&apos;ll own it. Technology will be our language, our weapon, our culture. Tech that speaks our truth, solves our issues, and elevates our name.
             </p>
             <p className="text-xl font-semibold text-red-400">
-              To the useless, the pessimists, the destroyers: watch us or get out of our way. We don't dream; we know, with the certainty of science and the fire of our heritage, we will succeed. The intelligent creators are the ones being called. This is our declaration, our future. Build, innovate, create, or fuck off.
+              To the useless, the pessimists, the destroyers: watch us or get out of our way. We don&apos;t dream; we know, with the certainty of science and the fire of our heritage, we will succeed. The intelligent creators are the ones being called. This is our declaration, our future. Build, innovate, create, or fuck off.
             </p>
           </section>
 
           <section className="space-y-6">
             <h2 className="text-3xl font-bold text-red-400">Afunism as the New Ethic</h2>
-            <p>Afunism is the vertebral column of our revival. Here's what it means to be a true Afunist:</p>
+            <p>Afunism is the vertebral column of our revival. Here&apos;s what it means to be a true Afunist:</p>
             <div className="grid gap-6">
               <div className="bg-red-950/30 border border-red-500/20 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-2 text-red-400">Unity First</h3>
@@ -112,11 +115,11 @@ const TechnoAfunism: NextPage = () => {
               </div>
               <div className="bg-red-950/30 border border-red-500/20 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-2 text-red-400">Zamint Growth</h3>
-                <p>We want more Africans because it makes us stronger and brings new ideas. Having more people come with responsibility; we'll make sure we can support it and defend them.</p>
+                <p>We want more Africans because it makes us stronger and brings new ideas. Having more people come with responsibility; we&apos;ll make sure we can support it and defend them.</p>
               </div>
               <div className="bg-red-950/30 border border-red-500/20 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-2 text-red-400">Loyalty To The Order</h3>
-                <p>We stand by our community, our leaders, and our goals. We're not blindly following; we're to come together for our future and our pride.</p>
+                <p>We stand by our community, our leaders, and our goals. We&apos;re not blindly following; we&apos;re to come together for our future and our pride.</p>
               </div>
               <div className="bg-red-950/30 border border-red-500/20 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-2 text-red-400">Race Before Individuals</h3>
@@ -124,7 +127,7 @@ const TechnoAfunism: NextPage = () => {
               </div>
               <div className="bg-red-950/30 border border-red-500/20 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-2 text-red-400">Never Hope, Always Gain Strength</h3>
-                <p>Hoping won't change things; doing will. We work to gain strength and succeed, not only dream about it. This way, we make things happen instead of waiting for them to happen.</p>
+                <p>Hoping won&apos;t change things; doing will. We work to gain strength and succeed, not only dream about it. This way, we make things happen instead of waiting for them to happen.</p>
               </div>
             </div>
           </section>
